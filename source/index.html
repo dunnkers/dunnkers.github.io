@@ -5,10 +5,13 @@ layout: default
 <section class="hero">
   <div class="hero-inner">
     <div class="container">
-      <img src="{{ site.author.thumb | prepend: site.baseurl }}" alt="author thumb" class="dot">
-      <h1>dunnkers</h1>
-      <h3>Hi! I am <strong itemprop="name">{{ site.author.name }}</strong>,<br>{{ site.author.job }}.</h3>
-      <h3>{{ site.author.bio }}</h3>
+      <img src="{{ site.author.thumb | prepend: site.baseurl }}"
+           alt="author thumb" class="dot"
+           width="255px">
+      <h3>Hi! I am <strong itemprop="name">{{ site.author.name }}</strong>,
+        <br><span style="font-size: 80%;">{{ site.author.job }}.</span></h3>
+      <h3>{{ site.author.bio }}
+        Likes <a href="{{ '/bookshelf' | prepend: site.baseurl }}" title="bookshelf">reading books</a> too.</h3>
       <!-- <a href="{{ '/about' | prepend: site.baseurl }}" class="button button-ghost" title="about">about</a> -->
       <!-- <a href="{{ '/blog' | prepend: site.baseurl }}" class="button button-ghost" title="blog">blog</a> -->
       {% include social.html %}
