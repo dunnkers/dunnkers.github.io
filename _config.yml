@@ -18,36 +18,30 @@ sass:
   style: compressed # expanded
 
 # SEO settings
-title: end2end
-description: "A free Jekyll theme for download"
-keywords: "Jekyll, theme, free, download, SEO, blog, web"
-url: http://nandomoreira.me
-baseurl: "/end2end"
+title: Dunnkers' personal website
+description: "My personal website"
+keywords: "blog, data scientist, data science"
+url: https://dunnkers.com
+baseurl: ""
 
-google_analytics: UA-52446115-1
-repo: http://github.com/nandomoreirame/end2end
+google_analytics: 
+repo: http://github.com/dunnkers/dunnkers.github.io
 disqus_shortname: "nandothemes"
 disqus_site_shortname: "nandothemes"
 
 # Author settings
 author:
-  name: Fernando Moreira
-  job: Frontend Engineer
-  bio: "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
-  thumb: /images/author.jpg
+  name: Jeroen Overschie
+  job: Student MSc Data Science and Systems Complexity
+  bio: "Web developer, Machine Learning enthusiast."
+  thumb: /images/me.jpeg
   email: nandomoreira.me@gmail.com
-  url: https://nandomoreira.me/
-  github: https://github.com/nandomoreirame
-  twitter: https://twitter.com/umdevux
-  facebook: https://facebook.com/umdevux
-  linkedin: https://linkedin.com/in/nandomoreirame
+  url: https://dunnkers.com/
+  github: https://github.com/dunnkers
+  linkedin: https://linkedin.com/in/jeroenoverschie/
 
 # navbar pages
 navbar:
-  - slug: about
-    title: About
-  - slug: icons
-    title: Icons
   - slug: blog
     title: Blog
 
