@@ -11,17 +11,12 @@
     font-weight: 300
 
   &-thumbnail
-    &, img
-      background-color: #f1eff0
-      border-radius: $base-border-radius
+    text-align: center
 
     +media($tablet-small)
-      float: left
-      max-width: 250px
-      margin-right: $small-spacing
-      margin-bottom: $small-spacing
+      margin-right: auto
+      margin-bottom: 4em
       padding: $small-spacing
-      border: $base-border
 
   .read-more
     color: lighten($action-color, 10%)
@@ -30,13 +25,16 @@
     margin-bottom: $base-spacing
 
   &-title
-    font-size: rem(26)
+    font-size: rem(46)
     margin-bottom: 0
     line-height: 1.5em
+    &.preview
+      font-size: rem(30)
 
   &-list
     .post
       @extend .card
+      box-shadow: none
 
       a
         color: $base-font-color
@@ -45,6 +43,7 @@
         &:active,
         &:focus
           color: $primary-color
+          box-shadow: none
 
 .post-list
   .post
@@ -55,12 +54,13 @@
         vertical-align: middle
 
     &-thumbnail
-      margin-bottom: $base-spacing
+      margin-bottom: 4em
       padding: 0
+      text-align: center
 
       +media($tablet-small)
-        width: 250px
         margin: 0
+        margin-bottom: 4em
 
       > a
         display: inline-block
