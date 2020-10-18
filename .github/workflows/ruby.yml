@@ -31,7 +31,6 @@ jobs:
         git init
         git checkout --orphan gh-pages
         git add .
-        message = "Site updated at #{Time.now.utc}"
         git commit -am "Site updated at $(date +'%Y-%m-%dT%H:%M:%S')"
         git remote add origin git@github.com:dunnkers/dunnkers.github.io.git
         git push origin gh-pages --force
