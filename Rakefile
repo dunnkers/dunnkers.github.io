@@ -10,7 +10,7 @@ GITHUB_REPONAME = "dunnkers/dunnkers.github.io"
 GITHUB_REPO_BRANCH = "gh-pages"
 
 SOURCE = "source/"
-DEST = "_site"
+DEST = "build"
 CONFIG = {
   'layouts' => File.join(SOURCE, "_layouts"),
   'posts' => File.join(SOURCE, "_posts"),
@@ -25,7 +25,7 @@ desc "Generate blog files"
 task :generate do
   Jekyll::Site.new(Jekyll.configuration({
     "source"      => "source/",
-    "destination" => "_site",
+    "destination" => "build",
     "config"      => "_config.yml"
   })).process
 end
@@ -33,7 +33,7 @@ end
 desc "Generate and publish blog to gh-pages"
 task :publish => [:generate] do
   Dir.mktmpdir do |tmp|
-    cp_r "_site/.", tmp
+    cp_r "build/.", tmp
 
     pwd = Dir.pwd
     Dir.chdir tmp
