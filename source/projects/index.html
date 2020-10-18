@@ -5,7 +5,7 @@ pagination:
 ---
 
 <section class="project-list">
-  {% for project in projects %}
+  {% for project in paginator.projects %}
     {% include project.html %}
   {% endfor %}
 </section>
