@@ -35,7 +35,7 @@ author:
   job: Student MSc Data Science and Systems Complexity
   bio: "Freelance Web developer and Machine Learning enthusiast."
   thumb: /images/author.jpeg
-  email: nandomoreira.me@gmail.com
+  email: 
   url: https://dunnkers.com/
   github: https://github.com/dunnkers
   linkedin: https://linkedin.com/in/jeroenoverschie/
@@ -44,5 +44,7 @@ author:
 navbar:
   - slug: blog
     title: Blog
+  - slug: projects
+    title: Projects
 
 exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]

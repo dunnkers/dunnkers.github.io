@@ -14,20 +14,24 @@ on:
     branches: [ master ]
 
 jobs:
-  test:
-
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Ruby
-    # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
-    # change this to (see https://github.com/ruby/setup-ruby#versioning):
-    # uses: ruby/setup-ruby@v1
-      uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6
     - name: Install dependencies
       run: bundle install
-    - name: Run tests
-      run: bundle exec rake
+    - name: Build website
+      run: bundle exec rake generate
+    - name: Publish to gh-pages
+      run: |
+        git init
+        git checkout --orphan gh-pages
+        git add .
+        message = "Site updated at #{Time.now.utc}"
+        git commit -am "Site updated at $(date +'%Y-%m-%dT%H:%M:%S')"
+        git remote add origin git@github.com:dunnkers/dunnkers.github.io.git
+        git push origin gh-pages --force
