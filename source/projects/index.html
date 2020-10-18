@@ -1,15 +1,9 @@
 ---
 layout: pages
-pagination:
-  enabled: false
 ---
 
 <section class="project-list">
-  {% for project in posts %}
-    {% include project.html %}
-  {% endfor %}
-
   {% for project in site.categories.projects %}
-    <li><span>{{ project.date | date_to_string }}</span> &nbsp; <a href="{{ project.link }}">{{ project.title }}</a></li>
+    {% include project.html %}
   {% endfor %}
 </section>
