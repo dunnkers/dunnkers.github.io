@@ -12,7 +12,7 @@ pagination:
 comments: true
 
 source: source
-destination: build
+destination: _site
 sass:
   sass_dir: _sass
   style: compressed # expanded

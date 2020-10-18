@@ -30,12 +30,16 @@ jobs:
         GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
         GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
       run: |
+        cd _site
         git init
         git config user.name "${GITHUB_ACTOR}"
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"        
         git checkout --orphan gh-pages
         git add .
+        echo -n 'Files to Commit:' && ls -l | wc -l && \
         git commit -m "Site updated at $(date +'%Y-%m-%dT%H:%M:%S')"
         remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" && \
         remote_branch="gh-pages" && \
         git push --force $remote_repo master:$remote_branch
+        cd ../
+        echo 'Deployment successful ✅'
