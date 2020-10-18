@@ -31,8 +31,8 @@ jobs:
         GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
       run: |
         git init
-        git config user.name "${GITHUB_ACTOR}" && \
-        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \        
+        git config user.name "${GITHUB_ACTOR}"
+        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"        
         git checkout --orphan gh-pages
         git add .
         git commit -m "Site updated at $(date +'%Y-%m-%dT%H:%M:%S')"
