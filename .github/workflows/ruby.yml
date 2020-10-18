@@ -10,8 +10,6 @@ name: Ruby
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   deploy:
@@ -27,12 +25,17 @@ jobs:
     - name: Build website
       run: bundle exec rake generate
     - name: Publish to gh-pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
       run: |
         git init
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config user.name "${GITHUB_ACTOR}" && \
+        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \        
         git checkout --orphan gh-pages
         git add .
-        git commit -am "Site updated at $(date +'%Y-%m-%dT%H:%M:%S')"
-        git remote add origin git@github.com:dunnkers/dunnkers.github.io.git
-        git push origin gh-pages --force
+        git commit -m "Site updated at $(date +'%Y-%m-%dT%H:%M:%S')"
+        remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" && \
+        remote_branch="gh-pages" && \
+        git push --force $remote_repo master:$remote_branch
