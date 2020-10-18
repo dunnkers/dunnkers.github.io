@@ -5,5 +5,7 @@ pagination:
 ---
 
 <section class="project-list">
-    Hello project list.
+  {% for project in projects %}
+    {% include project.html %}
+  {% endfor %}
 </section>
