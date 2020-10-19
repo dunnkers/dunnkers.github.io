@@ -2,6 +2,9 @@
     <h1 class="project-title preview">
         <a class="project-link" href="{{ project.link }}">{{ project.title }}</a>
     </h1>
+    <em class="project-meta">
+      <time>{{ project.date | date: "%B %Y" }}</time>
+    </em>
     <figure class="project-thumbnail {% if project.image %}{% else %}no-image{% endif %}">
         <a href="{{ project.link }}">
         {% if project.image %}
