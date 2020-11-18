@@ -33,18 +33,31 @@ figure
     max-width: 960px
 
 footer
-  ul li
-    display: inline-block
-    list-style: none
-    a
-      color: inherit
-      &:hover
-        text-decoration: underline
+  position: absolute
+  bottom: 0px
+  text-align: center
+  width: 100%
 
-    &:after
-      content: "\00b7"
-      font-weight: bold
+  ul
+    padding: 0
+    display: inline-block
+
+    li
+      display: inline-block
+
+      h6
+        display: inline
+        
+      list-style: none
+      a
+        color: inherit
+        &:hover
+          text-decoration: underline
+
+      &:after
+        content: "\00b7"
+        font-weight: bold
+      
+      &:last-child:after
+        content: ""
     
-    &:last-child:after
-      content: ""
-  
