@@ -37,3 +37,33 @@
 
   strong
     font-weight: $font-weight-bold
+
+.hero-footer
+  position: absolute
+  bottom: 0px
+  text-align: center
+  width: 100%
+
+  ul
+    padding: 0
+    display: inline-block
+
+    li
+      display: inline-block
+
+      h6
+        display: inline
+        
+      list-style: none
+      a
+        color: inherit
+        &:hover
+          text-decoration: underline
+
+      &:after
+        content: "\00b7"
+        font-weight: bold
+      
+      &:last-child:after
+        content: ""
+    
