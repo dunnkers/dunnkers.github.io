@@ -31,3 +31,20 @@ figure
 
   +media($desktop)
     max-width: 960px
+
+footer
+  ul li
+    display: inline-block
+    list-style: none
+    a
+      color: inherit
+      &:hover
+        text-decoration: underline
+
+    &:after
+      content: "\00b7"
+      font-weight: bold;
+    
+    &:last-child:after
+      content: "";
+  
