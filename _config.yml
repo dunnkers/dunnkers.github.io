@@ -6,7 +6,7 @@ plugins: [jekyll-paginate-v2]
 
 pagination:
   enabled: true
-  per_page: 3
+  per_page: 20
   permalink: "/page/:num/"
 
 comments: true
@@ -42,9 +42,5 @@ author:
 
 # navbar pages
 navbar:
-  - slug: blog
-    title: Blog
-  - slug: projects
-    title: Projects
 
 exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]

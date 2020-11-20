@@ -3,6 +3,5 @@ layout: project
 title:  "Tennis Game Simulator"
 image: /images/projects/tennis-game-simulator.png
 link: https://tennis-game-simulation.firebaseapp.com/
-hidden: true
 permalink: https://tennis-game-simulation.firebaseapp.com/
 ---

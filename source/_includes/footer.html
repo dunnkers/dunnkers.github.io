@@ -1,8 +1,11 @@
 <footer class="site-footer">
   <div class="container">
+    <small style='float:right;'>
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">RSS <i class="icon icon-rss"></i></a>
+    </small>
     {% include social.html %}
     <p class="txt-medium-gray">
-      <small>Dunnkers ♥ {{ site.time | date: '%Y' }}</small>
+      <small><a href="{{ "/" | prepend: site.baseurl }}" style='color:inherit;'>dunnkers</a> ♥ {{ site.time | date: '%Y' }}</small>
     </p>
   </div>
 </footer>

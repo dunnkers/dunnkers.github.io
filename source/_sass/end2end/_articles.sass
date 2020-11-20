@@ -6,10 +6,11 @@
 .post
   display: table
   word-break: break-word
+  border-bottom: 1px solid rgba(230, 230, 230, 1)
 
   &-meta
     font-size: .8rem
-    font-weight: 300
+    /*font-weight: 300*/
 
   &-thumbnail
     text-align: center
@@ -35,10 +36,11 @@
   &-list
     .post
       @extend .card
+      border-radius: 0
       box-shadow: none
 
       a
-        color: $base-font-color
+        color: black
 
         &:hover,
         &:active,
@@ -51,7 +53,7 @@
     &-content,
     &-thumbnail
       +media($tablet-small)
-        display: table-cell
+        /*display: table-cell*/
         vertical-align: middle
 
     &-thumbnail
