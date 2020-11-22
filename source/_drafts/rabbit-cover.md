@@ -21,3 +21,7 @@ BOOKS
 - 'Flow' ()
 - Meditations- 4.24
 - 
+
+
+[talk about getting rid of your distracting apps like snapchat, instagram; it's up to every individual how rigouriously one wants to clean his digital space.]
+... choose for yourself, but make sure to reclaim your precious attention in the process.
