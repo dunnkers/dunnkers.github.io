@@ -12,6 +12,7 @@ You didn't fall asleep- rather, you got pulled into another *internet rabbit hol
 
 - set a timer to work, e.g. set timer of 30 minutes focus work (Hyperfocus)
 
+-> from 'limitless' intro: digital dementia, etc.
 
 
 
