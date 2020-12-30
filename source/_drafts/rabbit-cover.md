@@ -10,8 +10,7 @@ categories: blog
 You didn't fall asleep- rather, you got pulled into another *internet rabbit hole*. Even though you set out to do some much needed work, you spent your time mindlessly browsing some corner of the internet. Your fault? Partially. Our ancient biological bodies surely weren't designed to withstand such an overload of impulses - rather: we are wired to be attracted to them. What **is** within our control, though, is whether we manage to 'catch' ourselves before we dive deep into the rabbit hole of distraction; and whether we make the conscious decision to limit the luring distractions in the first place. Let's explore how we can harness ourselves against distractions in the modern world.
 
 
-
-
+- set a timer to work, e.g. set timer of 30 minutes focus work (Hyperfocus)
 
 
 
