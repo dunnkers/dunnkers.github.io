@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Musical key recognition using a Hidden Markov Model"
+title:  "Musical Key Recognition using a Hidden Markov Model"
 image: /images/projects/music-key-classification.png
 link: https://dunnkers.com/music-key-classification
 permalink: https://dunnkers.com/music-key-classification
