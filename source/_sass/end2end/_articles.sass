@@ -24,14 +24,15 @@
     color: lighten($action-color, 10%)
 
   &-header
-    margin-bottom: $base-spacing
+    margin-bottom: 0.75em
 
   &-title
-    font-size: rem(46)
-    margin-bottom: 0
+    font-size: rem(5)
+    margin-bottom: -7px
     line-height: 1.5em
+    font-weight: 400
     &.preview
-      font-size: rem(30)
+      font-size: rem(26)
 
   &-list
     .post
@@ -48,8 +49,21 @@
           color: $primary-color
           box-shadow: none
 
+.post.grid
+  display: inline-grid
+  column-gap: 25px
+  grid-template-columns: auto
+
+  +media($tablet-small)
+    /* horizontal layout */
+    grid-template-columns: 40% auto
+
+
 .post-list
   .post
+    &-content
+      text-align: justify
+
     &-content,
     &-thumbnail
       +media($tablet-small)
@@ -57,7 +71,8 @@
         vertical-align: middle
 
     &-thumbnail
-      margin-bottom: 4em
+      margin: 0
+      margin-bottom: 2em
       padding: 0
       text-align: center
 
@@ -74,9 +89,9 @@
         background: url(../images/placeholder.png) no-repeat 50%
         background-size: cover
 
-    &-content
+    /*&-content
       +media($tablet-small)
-        padding: 0 0 0 $base-spacing
+        padding: 0 0 0 $base-spacing*/
 
 .project-list
   display: grid
@@ -110,3 +125,4 @@
     &-meta
       color: #8a8a8a
       font-size: 14px
+

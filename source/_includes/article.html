@@ -1,20 +1,29 @@
-<article class="post">
-  <header class="post-header">
-    <em class="post-meta">
-      <time>{{ post.date | date: "%b %-d, %Y" }}</time>
-    </em>
-    <h1 class="post-title preview">
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h1>
-  </header>
-  <figure class="post-thumbnail {% if post.image %}{% else %}no-image{% endif %}">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-      {% if post.image %}
-        <img src="{{ post.image }}" alt="{{ post.title }}">
-      {% endif %}
-    </a>
-  </figure>
-  <div class="post-content">
-    <p><a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}">{{ post.content | strip_html | truncatewords: 60 }} <span class="read-more">[read more]</span></a></p>
+<article class="post grid">
+  <div class="post-left-side">
+    <figure class="post-thumbnail {% if post.image %}{% else %}no-image{% endif %}">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        {% if post.image %}
+          <img src="{{ post.image }}" alt="{{ post.title }}">
+        {% endif %}
+      </a>
+    </figure>
+  </div>
+  <div class="post-right-side">
+    <header class="post-header">
+      <h1 class="post-title preview">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h1>
+      <span class="post-meta">
+        <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+      </span>
+    </header>
+    <div class="post-content">
+      <p>
+        <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
+        <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}">
+          <span class="read-more">Read more »</span>
+        </a>
+      </p>
+    </div>
   </div>
 </article>
