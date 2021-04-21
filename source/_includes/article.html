@@ -1,7 +1,7 @@
 <article class="post grid">
   <div class="post-left-side">
     <figure class="post-thumbnail {% if post.image %}{% else %}no-image{% endif %}">
-      <a href="{{ post.url }}">
+      <a href="{{ post.url | prepend: site.baseurl }}">
         {% if post.image %}
           <img src="{{ post.image }}" alt="{{ post.title }}">
         {% endif %}
@@ -11,7 +11,7 @@
   <div class="post-right-side">
     <header class="post-header">
       <h1 class="post-title preview">
-        <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h1>
       <span class="post-meta">
         <time>{{ post.date | date: "%b %-d, %Y" }}</time>
@@ -20,9 +20,15 @@
     <div class="post-content">
       <p>
         <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
-        <a href="{{ post.url }}" title="Permalink to: {{ post.title }}">
-          <span class="read-more">Read more »</span>
-        </a>
+        {% if post.linktype == 'pdf' %}
+          <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}">
+            <span class="read-more">PDF</span>
+          </a>
+        {% else %}
+          <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}">
+            <span class="read-more">Read more »</span>
+          </a>
+        {% endif %}
       </p>
     </div>
   </div>
