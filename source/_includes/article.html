@@ -29,6 +29,11 @@
             <span class="read-more">Read more »</span>
           </a>
         {% endif %}
+        {% if post.github %}
+          <a href="{{ post.github}}" class="github-link" title="Link to Github page">
+            <img src="/images/github32.png" alt="Github logo">
+          </a>
+        {% endif %}
       </p>
     </div>
   </div>
