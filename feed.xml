@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jeroen Overschie</title>
+    <description>Personal website of Jeroen Overschie (dunnkers).</description>
+    <link>https://dunnkers.com/</link>
+    <atom:link href="https://dunnkers.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 14 Jul 2021 09:05:07 +0000</pubDate>
+    <lastBuildDate>Wed, 14 Jul 2021 09:05:07 +0000</lastBuildDate>
+    <generator>Jekyll v3.6.3</generator>
+    
+      <item>
+        <title>From Linear Regression to Neural Networks</title>
+        <description>&lt;p&gt;These days there exists much hype around sophisticated machine learning methods such as Neural Networks — they are massively powerful models that allow us to fit very flexible models. However, we do not always require the full complexity of a Neural Network: sometimes, a simpler model will do the job just fine. In this project, we take a journey starting from the most fundamental statistical machinery to model data distributions, linear regression, to then explain the benefits of constructing more complex models, such as logistic regression or a Neural Network. In this way, this text aims to build a bridge from the statistical, analytical world to the more approximative world of Machine Learning. We will not shy away from the math, whilst still working with tangible examples at all times: we will work with real-world datasets and we will get to apply our models as we go on. Let’s start!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+        <link>https://dunnkers.com/linear-regression-to-neural-networks</link>
+        <guid isPermaLink="true">https://dunnkers.com/linear-regression-to-neural-networks</guid>
+        
+        
+        <category>projects</category>
+        
+      </item>
+    
+      <item>
+        <title>Making Art with Generative Adversarial Networks</title>
+        <description>&lt;p&gt;Generative Adversarial Networks are a relatively new type of technique for generating samples from a learned distribution, in which two networks are simultaneously trained whilst competing against each other. Applications for GAN’s are numerous, including image up-sampling, image generation, and the recently quite popular ’deep fakes’.
+In this project, we aim to train such a Generative Adversarial Network ourselves, with the purpose of image generation, specifically. As the generation of human faces has been widely studied, we have chosen a different topic, namely: the generation of paintings. While large datasets of paintings are available, we have opted to restrict ourselves to one artist, as we believe this will give a better chance at producing realistic paintings. For this, we have chosen the Dutch artist Vincent van Gogh, who is known for his unique style.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 09 Apr 2021 00:00:00 +0000</pubDate>
+        <link>https://dunnkers.com/generative-adversarial-networks/Making%20Art%20with%20Generative%20Adversarial%20Networks.pdf</link>
+        <guid isPermaLink="true">https://dunnkers.com/generative-adversarial-networks/Making%20Art%20with%20Generative%20Adversarial%20Networks.pdf</guid>
+        
+        
+        <category>projects</category>
+        
+      </item>
+    
+      <item>
+        <title>Musical Key Recognition using a Hidden Markov Model</title>
+        <description>&lt;p&gt;Musical keys can be thought of as the foundation on which music and songs are created. The development of an automated technique to recognise the overall key of a musical recording is driven by the need in the production and mixing of music. In this paper Hidden Markov Models (HMMs) are used to detect the key of tracks retrieved from Spotify’s web API. The relative strength of each pitch in different segments of a track, represented as the chroma vector, was extracted for about 10,000 tracks. The HMMs models were trained for each mode, major and minor, and shifted to create one for each key. Two model states were chosen for the HMM models to optimize the validation error rate as well as the computational time. Additionally, a naive approach was created using cross-correlation. These two methods were compared using 10-fold cross-validation on various sized data-sets. While both models performed better and stabilized further with an increase in the number of tracks, the HMMs out-performed the naive method. A brief investigation of the confidence level associated with the labelled keys found a decrease in validation error for tracks with a higher confidence. It is therefore recommended to further explore the cause of the key confidence and to what extent it affects the training of the models.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
+        <link>https://dunnkers.com/music-key-classification</link>
+        <guid isPermaLink="true">https://dunnkers.com/music-key-classification</guid>
+        
+        
+        <category>projects</category>
+        
+      </item>
+    
+      <item>
+        <title>Finding 'God' components in Apache Tika</title>
+        <description>&lt;p&gt;God Components (or ’God objects’) are components in a software system that have accumulated a large bulk of classes and lines of code over time. Such really large, bulky components are hard to maintain and to reason about; they are in fact a software anti-pattern. It is preferred to have smaller, isolated components instead. Although it is a common good practice to build software by creating small building blocks of reusable code and accessing them using a declarative and well-documented API, big code-bases might still suffer from scaling issues: large inter-weaved software components might develop that become difficult to reason about.
+In this project, one such analysis will be ran on the Apache Tika project.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+        <link>https://dunnkers.com/god-components</link>
+        <guid isPermaLink="true">https://dunnkers.com/god-components</guid>
+        
+        
+        <category>projects</category>
+        
+      </item>
+    
+      <item>
+        <title>Backdoors in Neural Networks</title>
+        <description>&lt;p&gt;Neural Networks are in increasing popularity, being applied in ever more fields and applications. The expanding set of tools available to train Neural Networks makes it easier for both consumers and professionals to utilize the power of the architecture. The networks do come at a risk, however. Because big computer vision networks can take up vast computational resources to train, consumers resort to using pre-trained off-the-shelf models. Using pre-trained networks in critical applications without precaution might pose serious security risks - think of applications like biometrical identification with face recognition, traffic sign recognition for autonomous driving, or usage in robotics and industrial control (Casini et al, 2019): serious harm might be done if there exist vulnerabilities in the Neural Networks powering these applications. In this experiment, we show that it is relatively easy to infect (Deep) Neural Networks when an adversary has access to the training data and network, tricking the network into giving false outputs when some very specific input is given.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+        <link>https://dunnkers.com/neural-network-backdoors/</link>
+        <guid isPermaLink="true">https://dunnkers.com/neural-network-backdoors/</guid>
+        
+        
+        <category>projects</category>
+        
+      </item>
+    
+      <item>
+        <title>COVID-19 Dashboard</title>
+        <description>&lt;p&gt;We are in the midst of a global pandemic. At the time this project started, the Corona virus was still just a headline for most - but in the meantime it reached and impacted all of our lives. Fighting such a pandemic happens in many ways on multiple scales. We are interested in how this can be done on the societal level: using data. We built a pipeline capable of processing a large dataset and created a visualization of the areas most vulnerable to Corona which includes reported cases in real-time.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+        <link>https://dunnkers.com/disease-spread</link>
+        <guid isPermaLink="true">https://dunnkers.com/disease-spread</guid>
+        
+        
+        <category>projects</category>
+        
+      </item>
+    
+  </channel>
+</rss>
