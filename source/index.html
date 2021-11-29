@@ -6,10 +6,16 @@ layout: default
   <div class="hero-inner">
     <div class="container">
       <img src="{{ site.author.thumb | prepend: site.baseurl }}" alt="author thumb" class="dot" width="255px">
-      <h3>Hi! I am <strong itemprop="name">{{ site.author.name }}</strong>,
-        <br><span style="font-size: 80%;">aka {{ site.author.job }}.</span></h3>
-      <h3>
-        {{ site.author.bio }} <a href="https://jeroenoverschie.nl/">my blog</a>.
+      <h3>Hi! I am 
+        <strong style="font-weight: 600;">{{ site.author.name }}</strong>,
+        <br>
+        <span style="font-size: 80%;">aka 
+        <span style="color: #898989;">
+          <a href="https://github.com/dunnkers" style="text-decoration: none; color: #898989;">{{ site.author.job }}</a>
+        </span>.</span></h3>
+      <h3 style="font-size: 2.0rem; font-weight: 200;">
+        {{ site.author.bio }} <a href="https://jeroenoverschie.nl/">my blog</a>. I also 
+        like to read <a href="{{ '/bookshelf' | prepend: site.baseurl }}">books</a>.
         <!-- Likes 
         <a href="{{ '/projects' | prepend: site.baseurl }}" title="Projects">building stuff</a>
          and <a href="{{ '/bookshelf' | prepend: site.baseurl }}" title="Bookshelf">reading books</a>. -->
@@ -22,9 +28,11 @@ layout: default
     <footer class='hero-footer'>
       <ul>
         <li>
-          <h6>
+          <div style="
+          font-size: 10px;
+      ">
             dunnkers ♥ 2021
-          </h6>
+          </div>
         </li>
       </ul>
     </footer>
