@@ -18,8 +18,8 @@ sass:
   style: compressed # expanded
 
 # SEO settings
-title: Jeroen Overschie
-description: "Personal website of Jeroen Overschie (dunnkers)."
+title: dunnkers
+description: "Personal website of dunnkers (Jeroen Overschie)."
 keywords: "blog, data scientist, data science, machine learning, artificial intelligence"
 url: https://dunnkers.com
 baseurl: ""
