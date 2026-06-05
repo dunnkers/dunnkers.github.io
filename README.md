@@ -1,7 +1,3 @@
-# dunnkers
-My personal website
+# dunnkers.com
 
-## Local development
-```
-bundler exec jekyll serve --drafts
-```
+Redirects to [jeroenoverschie.nl](https://jeroenoverschie.nl).
